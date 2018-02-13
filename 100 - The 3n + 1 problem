@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,u,j,s,k,max,l,p,count;
+    while(scanf("%d%d",&i,&j)==2)
+    {
+        l=i;
+        p=j;
+        if(i>j)
+        {
+            s=i;
+            i=j;
+            j=s;
+        }
+        max=0;
+        for(u=i; u<=j; u++)
+        {
+            count=0;
+            int m=u;
+            while(1)
+            {
+                count++;
+                if(m==1)
+                    break;
+                if(m%2!=0)
+                {
+                    m=3*m+1;
+
+                }
+                else
+                {
+                    m=m/2;
+                }
+
+            }
+            if(count>max)
+            {
+                max=count;
+            }
+
+        }
+        printf("%d %d %d\n",l,p,max);
+    }
+    return 0;
+
+}
