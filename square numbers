@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    while(1)
+    {
+        int i,j,count,a,d;
+        double s;
+        scanf("%d %d",&i,&j);
+        if(i==0 && j==0)
+        {
+            break;
+        }
+        else
+        {
+            count=0;
+            for(a=i;a<=j;a++)
+            {
+                s=sqrt(a);
+                d=(int)s;
+
+                if((s-d)==0)
+                {
+                    count++;
+                }
+            }
+        }
+        printf("%d\n",count);
+    }
+    return 0;
+}
