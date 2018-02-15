@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int a,d;
+    while(1)
+    {
+
+        scanf("%d",&a);
+        if(a<=100 && a!=0 )
+        {
+            d=91;
+        }
+        else if(a>=101)
+        {
+            d=a;
+            d=d-10;
+        }
+
+        else if(a==0)
+        {
+            break;
+        }
+        printf("f91(%d) = %d\n",a,d);
+    }
+
+
+    return 0;
+}
