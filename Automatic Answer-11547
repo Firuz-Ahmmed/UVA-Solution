@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,l,i,d,s;
+    scanf("%d",&a);
+    for(i=0;i<a;i++)
+    {
+        scanf("%d",&s);
+        if(s>=-1000 && s<=1000)
+        {
+            d=((((((s*567)/9)+7492)*235)/47)-498);
+            d=d/10;
+            d=d%10;
+            printf("%d\n",abs(d));
+        }
+    }
+    return 0;
+}
