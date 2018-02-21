@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+#define PI acos(-1)
+int main()
+{
+    int a,s,i;
+    double w,r,area,radious,greenarea;
+    scanf("%d",&a);
+    if(a>0 && a<=100)
+    {
+        for(i=0; i<a; i++)
+        {
+            scanf("%d",&s);
+            if(s>0 && s<=1000)
+            {
+                w=s*.6;
+                r=s*.2;
+                area=s*w;
+                radious=PI*r*r;
+                greenarea=(area-radious);
+                printf("%4.2f %4.2f\n",radious,greenarea);
+            }
+        }
+    }
+    return 0;
+}
