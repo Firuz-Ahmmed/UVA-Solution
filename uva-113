@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double a,s;
+    while(scanf("%lf %lf",&a,&s)!=EOF)
+    {
+        printf("%0.lf\n",pow(s,1/a));
+    }
+    return 0;
+}
